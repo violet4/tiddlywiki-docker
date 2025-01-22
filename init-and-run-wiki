@@ -13,7 +13,7 @@ fi
 if [ ! -d /var/lib/tiddlywiki/mywiki ]; then
   /usr/bin/env node $NODEJS_V8_ARGS $tiddlywiki_script mywiki --init server
 
-  mkdir /var/lib/tiddlywiki/mywiki/tiddlers
+  mkdir -p /var/lib/tiddlywiki/mywiki/tiddlers
 fi
 
 
